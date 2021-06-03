@@ -1,0 +1,22 @@
+.up-arrow
+  position: fixed
+  right: 50px
+  bottom: -150%
+  display: block
+  height: 70px
+  width: 70px
+  border-radius: 16px
+  background-image: url('./up-arrow.png')
+  background-position: 50% 50%
+  background-color: $color-main
+  background-repeat: no-repeat
+  transition: background-color .3s, box-shadow .3s, bottom .7s
+  z-index: 1000
+  cursor: pointer
+
+  &:hover
+    background-color: $color-text-second
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1)
+
+  &--show
+    bottom: 100px

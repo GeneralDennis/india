@@ -1,0 +1,15 @@
+include ../../../layout/card/card
+
+- var cards = [{cardImg: 'images/card1.png', cardTitle: 'Religion Inc.', cardDownloads: '1 000 000+', cardReviews: '23 000+'}, {cardImg: 'images/card2.png', cardTitle: 'Survival Island: EVO 2', cardDownloads: '20 000 000+', cardReviews: '25 000+'}, {cardImg: 'images/card3.png', cardTitle: 'Gangstar City: Crime Miami', cardDownloads: '4 000 000+', cardReviews: '15 000+'}, {cardImg: 'images/card4.png', cardTitle: 'Survival Island 2: Dinosaurs & Craft', cardDownloads: '8 000 000+', cardReviews: '10 000+'}]
+
+
+
+section.projects
+  header.projects__header
+    h2.title.projects__title Игры и приложения
+    h4.projects__subtitle которые мы продвигали, издавали или разработали
+  .projects__slider
+    .projects-swiper-container.swiper-container
+      .swiper-wrapper
+        each card in cards
+          +card(card.cardImg, card.cardTitle, card.cardDownloads, card.cardReviews)

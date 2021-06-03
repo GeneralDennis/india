@@ -1,0 +1,9 @@
+mixin expertise-card(cardVideo, cardPoster, cardText)
+  .swiper-slide.expertise-swiper-slide
+    .expertise-card__video
+      iframe(data-src=cardVideo frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="")
+      img(src=cardPoster, alt="")
+      .expertise-card__play-btn
+
+    footer.expertise-card__footer
+      p.expertise-card__footer-text=cardText

@@ -1,0 +1,34 @@
+-
+  var socials = [
+    {
+      name: 'youtube',
+      link: 'https://youtube.com',
+      img: 'images/youtube-img.svg'
+    },
+    {
+      name: 'instagram',
+      link: 'https://instagram.com',
+      img: 'images/instagram-img.svg'
+    },
+    {
+      name: 'twitter',
+      link: 'https://twitter.com',
+      img: 'images/twitter-img.svg'
+    },
+    {
+      name: 'vkontakte',
+      link: 'https://vk.com',
+      img: 'images/vk-img.svg'
+    },
+    {
+      name: 'facebook',
+      link: 'https://facebook.com',
+      img: 'images/facebook-img.svg'
+    }
+  ]
+
+.socials
+  each item in socials
+    a(href=item.link).socials__item
+      img(src=item.img, alt=item.name)
+

@@ -13,13 +13,11 @@ html
     link(rel='stylesheet' href='webpack/css/app.css?' + hash)
   body
     .wrapper
-      include header/header
+      aside
+        include menu/menu
       .content
         main.main
           block content
       //- include footer/footer
-      //- include up-arrow/up-arrow
-      include callback-popup/callback-popup
-      include success-popup/success-popup
     script(src='webpack/js/vendors.js?' + hash)
     script(src='webpack/js/app.js?' + hash)

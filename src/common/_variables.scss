@@ -1,9 +1,7 @@
 // VARIABLE
 
 // FONT FAMILY
-$font-family-base: 'Nunito', sans-serif;
-$font-family-second: 'Montserrat', sans-serif;
-$font-family-third: 'Gilroy', sans-serif;
+$font-family-base: 'PlayfairDisplay', sans-serif;
 
 $font-weight-thin: 100;           // Thin (Hairline)
 $font-weight-extra-light: 200;    // Extra Light (Ultra Light)
@@ -18,8 +16,11 @@ $font-weight-black: 900;          // Black (Heavy)
 $font-weight-base: $font-weight-normal;
 
 // COLOR
-$color-background: #fff;
-$color-text-base: #7D8797;
+$color-background: #161F22;
+$color-green: #2d6953;
+$color-red: #B42437;
+$color-dark-red: #531520;
+$color-text-base: #FBF8ED;
 $color-text-second: #04035F;
 $color-text-third: #22215B;
 $color-main: #5360FE;

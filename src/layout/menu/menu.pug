@@ -1,0 +1,79 @@
+-
+  var items =
+      [
+        {
+          text: 'Услуги',
+          href: 'Услуги'
+        },
+        {
+          text: 'Мероприятия',
+          href: 'Мероприятия'
+        },
+        {
+          text: 'Школы танцев',
+          href: 'Школы танцев'
+        },
+        {
+          text: 'Партнеры и спонсоры',
+          href: 'Партнеры и спонсоры'
+        },
+        {
+          text: 'Новости',
+          href: 'Новости'
+        },
+        {
+          text: 'О нас',
+          href: 'О нас'
+        },
+        {
+          text: 'Культура Индии',
+          href: 'Культура Индии'
+        },
+        {
+          text: 'Контакты',
+          href: 'Контакты'
+        },
+      ]
+-
+  var socialItems =
+      [
+        {
+          img: 'images/vk-g.png',
+          href: 'vk'
+        },
+        {
+          img: 'images/instagram-g.png',
+          href: 'insta'
+        },
+        {
+          img: 'images/facebook-g.png',
+          href: 'facebook'
+        },
+        {
+          img: 'images/youtube-g.png',
+          href: 'youtube'
+        }
+      ]
+
+.menu
+  header.menu__header
+    img(src="images/logo.png", alt="logo").menu__header-logo
+    img(src="images/title.png", alt="title").menu__header-title
+    p.menu__header-description Фонд изучения культурного наследия Индии
+  .menu__body
+    ul.menu__list
+      each item in items
+        li.menu__list-item
+          a(href=item.href)=item.text
+
+  footer.menu__footer
+    a(href="maiilto: info@nrityas.ru").menu__footer-mail info@nrityas.ru
+    .social.menu__social
+      each item in socialItems
+        a(href=item.href).menu__social-item
+          img(src=item.img, alt="social item")
+    .callback-btn.menu__callback-btn Связаться
+
+
+
+
